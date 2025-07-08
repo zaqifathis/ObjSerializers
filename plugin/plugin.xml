@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PluginDescriptor>
+    <JavaPlugin>
+        <interfaceClass>org.bimserver.plugins.serializers.SerializerPlugin</interfaceClass>
+        <implementationClass>org.bimserver.obj.BInaryObjSerializerPlugin</implementationClass>
+        <description>Serializer to binary Obj</description>
+        <name>Binary Obj Serializer</name>
+    </JavaPlugin>
+</PluginDescriptor>
