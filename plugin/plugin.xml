@@ -2,7 +2,7 @@
 <PluginDescriptor>
     <JavaPlugin>
         <interfaceClass>org.bimserver.plugins.serializers.SerializerPlugin</interfaceClass>
-        <implementationClass>org.bimserver.obj.BInaryObjSerializerPlugin</implementationClass>
+        <implementationClass>org.bimserver.obj.BinaryObjSerializerPlugin</implementationClass>
         <description>Serializer to binary Obj</description>
         <name>Binary Obj Serializer</name>
     </JavaPlugin>
