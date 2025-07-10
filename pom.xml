@@ -4,8 +4,8 @@
     <groupId>org.opensourcebim</groupId>
     <artifactId>objserializers</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Obj</name>
-    <description>BIMserver plugin that provides a binary Obj serializer</description>
+    <name>OBJ</name>
+    <description>OBJ serializer</description>
     <organization>
         <name>OpenFabTwin</name>
     </organization>
@@ -22,6 +22,16 @@
             <email>zaqi.fathis@htw-dresden.de</email>
         </developer>
     </developers>
+    <distributionManagement>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
     <properties>
         <maven.build.timestamp.format>yyyy-MM-dd'T'HH:mm:ssZ</maven.build.timestamp.format>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -1,5 +1,7 @@
 package org.bimserver.obj;
 
+import java.util.Collections;
+import java.util.HashSet;
 import java.util.Set;
 
 import org.bimserver.emf.Schema;
@@ -32,7 +34,10 @@ public class BinaryObjSerializerPlugin extends AbstractSerializerPlugin {
 
     @Override
     public Set<Schema> getSupportedSchemas() {
-        return Schema.GEOMETRY.toSet();
+        Set<Schema> schemas = new HashSet<>();
+        schemas.add(Schema.IFC2X3TC1);
+        schemas.add(Schema.IFC4);
+        return schemas;
     }
 
     @Override
