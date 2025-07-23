@@ -1,6 +1,5 @@
-package org.bimserver.obj;
+package org.openfabtwin.obj;
 
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
