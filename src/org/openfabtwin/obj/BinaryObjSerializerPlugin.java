@@ -23,12 +23,12 @@ public class BinaryObjSerializerPlugin extends AbstractSerializerPlugin {
 
     @Override
     public String getDefaultContentType() {
-        return "model/obj";
+        return "application/zip";
     }
 
     @Override
     public String getDefaultExtension() {
-        return "obj";
+        return "zip";
     }
 
     @Override
