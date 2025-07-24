@@ -22,8 +22,7 @@ public class BinaryObjSerializer extends AbstractGeometrySerializer {
     private UTF8PrintWriter objWriter;
     private UTF8PrintWriter mtlWriter;
 
-    private String matFileName = "mat.mtl";
-    private String objFileName = "model.obj";
+    private final String matFileName = "mat.mtl";
 
     public BinaryObjSerializer() {
     }
@@ -43,6 +42,7 @@ public class BinaryObjSerializer extends AbstractGeometrySerializer {
             zipOut.closeEntry();
 
             // 2. Create model.obj entry
+            String objFileName = "model.obj";
             zipOut.putNextEntry(new ZipEntry(objFileName));
             this.objWriter = new UTF8PrintWriter(zipOut);
             writeObjContents();
